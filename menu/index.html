@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marinos Döner | Dijital Menü</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="top"><div class="container nav">
+<a class="brand" href="/"><img src="../assets/logo.png" alt="Marinos Döner"><span>MARINOS DÖNER</span></a>
+<nav class="links"><a href="/">Ana Sayfa</a><a class="btn" target="_blank" href="https://wa.me/905427120270">WhatsApp</a></nav>
+</div></header>
+
+<section class="menu-hero container">
+<img class="menu-logo" src="../assets/logo.png" alt="Marinos Döner logosu">
+<h1 style="font-size:46px;margin:8px 0">Dijital Menü</h1>
+<p style="color:var(--muted)">Et döner, tavuk döner, Alman ve Hatay usulü seçenekler.</p>
+</section>
+
+<div class="container filters" id="filters"></div>
+<main class="container"><div class="menu-grid" id="menuGrid"></div></main>
+
+<script src="../menu-data.js"></script>
+<script>
+const grid=document.getElementById('menuGrid');
+const filters=document.getElementById('filters');
+const cats=['Tümü',...new Set(window.MENU_ITEMS.map(x=>x.category))];
+function render(filter='Tümü'){
+ grid.innerHTML='';
+ window.MENU_ITEMS.filter(x=>filter==='Tümü'||x.category===filter).forEach(item=>{
+   const price=item.price?`₺${item.price}`:'₺ —';
+   const msg=encodeURIComponent(item.name+' sipariş vermek istiyorum');
+   grid.insertAdjacentHTML('beforeend',`
+   <article class="menu-card">
+     <img src="../assets/${item.image}" alt="${item.name}">
+     <div class="menu-content">
+       <div class="menu-head"><h3>${item.name}</h3><span class="price">${price}</span></div>
+       <p class="desc">${item.desc||''}</p>
+       <a class="order" target="_blank" href="https://wa.me/905427120270?text=${msg}">Sipariş Ver</a>
+     </div>
+   </article>`);
+ });
+}
+cats.forEach((c,i)=>{
+ const b=document.createElement('button');
+ b.className='filter'+(i===0?' active':'');
+ b.textContent=c;
+ b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(c)};
+ filters.appendChild(b);
+});
+render();
+</script>
+</body></html>
