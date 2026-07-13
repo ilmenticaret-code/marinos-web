@@ -1,10 +1,16 @@
-MARINOS DÖNER PREMIUM WEB SİTESİ
+MARINOS DÖNER V3 SEO FINAL
 
-Ana sayfa: https://marinosdoner.com
-Dijital menü: https://marinosdoner.com/menu
+GitHub yükleme:
+1. ZIP dosyasını bilgisayarda açın.
+2. Klasörün içindeki tüm dosya ve klasörleri marinos-web deposunun ana dizinine yükleyin.
+3. Commit changes seçin. Cloudflare Pages otomatik yayınlar.
 
-Fiyat güncelleme:
-menu-data.js dosyasındaki ilgili ürünün "price" alanını değiştirin.
-Et fiyatları şimdilik boş bırakılmıştır.
-
-Cloudflare Pages'e yüklemek için bu klasörün içeriğini yayınlayın.
+İçerik:
+- 7 indekslenebilir sayfa + özel 404
+- Canonical, meta description, Open Graph, Twitter Cards
+- Restaurant, WebSite, Breadcrumb, Menu ve ItemList JSON-LD
+- sitemap.xml ve robots.txt
+- favicon, PWA manifest ve sosyal paylaşım görseli
+- WebP görseller, lazy loading, erişilebilir alt metinler
+- Güvenlik ve önbellek başlıkları
+- Alman Et Box: 550 TL
