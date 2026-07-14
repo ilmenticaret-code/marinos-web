@@ -10,3 +10,10 @@
   Cache-Control: public, max-age=300
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
+
+/styles-v402.css
+  Cache-Control: public, max-age=0, must-revalidate
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+/app.js
+  Cache-Control: public, max-age=0, must-revalidate

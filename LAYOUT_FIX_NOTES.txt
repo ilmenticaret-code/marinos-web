@@ -1,0 +1,1 @@
+V4.0.2: Ana sayfa kurumsal düzene alındı; CSS önbellek sürümü değiştirildi; menü, buton, istatistik, yorum ve footer iç içe geçme sorunu giderildi.
