@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.marinosdoner.com/sitemap.xml
+Sitemap: https://marinosdoner.com/sitemap.xml

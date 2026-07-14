@@ -1,0 +1,1 @@
+V4.0.1 görsel eşleştirme düzeltmesi. Ürün şekilleri: dürüm, zurna, bazuka, gobit, box ve tabak ayrı görsellerle eşleştirildi. Cache sürümü: 401.

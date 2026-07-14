@@ -1,10 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://www.marinosdoner.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://www.marinosdoner.com/menu/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.marinosdoner.com/et-doner/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.marinosdoner.com/tavuk-doner/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.marinosdoner.com/hakkimizda/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.marinosdoner.com/galeri/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.marinosdoner.com/iletisim/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://marinosdoner.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url><url><loc>https://marinosdoner.com/menu/</loc><changefreq>daily</changefreq><priority>0.8</priority></url><url><loc>https://marinosdoner.com/et-doner/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://marinosdoner.com/tavuk-doner/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://marinosdoner.com/hakkimizda/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://marinosdoner.com/galeri/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://marinosdoner.com/iletisim/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://marinosdoner.com/en/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url></urlset>

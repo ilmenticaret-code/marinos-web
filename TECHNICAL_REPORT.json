@@ -1,14 +1,14 @@
 {
-  "pages_checked": 8,
-  "menu_items": 19,
-  "alman_et_box_price": "550",
-  "seo_files": [
-    "robots.txt",
-    "sitemap.xml",
-    "site.webmanifest",
-    "favicon.ico",
-    "404.html",
-    "_headers"
-  ],
-  "errors": []
+  "version": "4.0.0",
+  "analytics": "G-DEKTBYE7TM",
+  "search_console": "DNS verified",
+  "sitemap": "https://marinosdoner.com/sitemap.xml",
+  "pages": 9,
+  "products": 22,
+  "images_webp": 18,
+  "google_reviews": "API-ready; Place ID and protected endpoint remain to be supplied",
+  "notes": [
+    "Product images use the closest matching existing visual by product form.",
+    "No public API key is embedded."
+  ]
 }

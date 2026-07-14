@@ -1,0 +1,349 @@
+[
+  {
+    "id": "et-klasik-durum",
+    "cat": "Et Döner",
+    "name": "Et Klasik Dürüm",
+    "name_en": "Classic Beef Döner Wrap",
+    "price": 300,
+    "gram": "80 gr",
+    "img": "et_klasik",
+    "desc": "Yaprak et döner, marul, domates, soğan ve salça sosu.",
+    "desc_en": "Beef döner, lettuce, tomato, onion and tomato sauce.",
+    "tags": [
+      "et",
+      "dürüm"
+    ]
+  },
+  {
+    "id": "et-iskender",
+    "cat": "Et Döner",
+    "name": "Et İskender",
+    "name_en": "Beef İskender",
+    "price": 600,
+    "gram": "",
+    "img": "et_iskender",
+    "desc": "Pide, yaprak et döner, domates sosu, yoğurt ve tereyağı.",
+    "desc_en": "Pide bread, beef döner, tomato sauce, yogurt and butter.",
+    "tags": [
+      "et",
+      "tabak"
+    ]
+  },
+  {
+    "id": "pilav-ustu-et",
+    "cat": "Et Döner",
+    "name": "Pilav Üstü Et Döner",
+    "name_en": "Beef Döner over Rice",
+    "price": 650,
+    "gram": "",
+    "img": "pilav_et",
+    "desc": "Tereyağlı pilav üzerinde bol yaprak et döner.",
+    "desc_en": "Generous beef döner served over buttered rice.",
+    "tags": [
+      "et",
+      "tabak"
+    ]
+  },
+  {
+    "id": "hatay-et-durum",
+    "cat": "Hatay Usulü",
+    "name": "Hatay Usulü Et Dürüm",
+    "name_en": "Hatay Style Beef Wrap",
+    "price": 300,
+    "gram": "80 gr",
+    "img": "et_klasik",
+    "desc": "Kızarmış lavaş, et döner, patates, turşu, sarımsaklı mayonez ve Hatay sosu.",
+    "desc_en": "Toasted lavash, beef döner, fries, pickles, garlic mayo and Hatay sauce.",
+    "tags": [
+      "et",
+      "hatay",
+      "dürüm"
+    ]
+  },
+  {
+    "id": "hatay-et-zurna",
+    "cat": "Hatay Usulü",
+    "name": "Hatay Usulü Et Zurna",
+    "name_en": "Hatay Style Beef Zurna",
+    "price": 350,
+    "gram": "90 gr",
+    "img": "et_zurna",
+    "desc": "Uzun kızarmış lavaşta et döner, patates, turşu ve özel soslar.",
+    "desc_en": "Long toasted lavash with beef döner, fries, pickles and special sauces.",
+    "tags": [
+      "et",
+      "hatay",
+      "zurna"
+    ]
+  },
+  {
+    "id": "hatay-et-bazuka",
+    "cat": "Hatay Usulü",
+    "name": "Hatay Usulü Et Bazuka",
+    "name_en": "Hatay Style Beef Bazooka",
+    "price": 400,
+    "gram": "90 gr",
+    "img": "et_bazuka",
+    "desc": "45 cm çift lavaşta bol et döner.",
+    "desc_en": "Generous beef döner in a 45 cm double lavash.",
+    "tags": [
+      "et",
+      "hatay",
+      "bazuka"
+    ]
+  },
+  {
+    "id": "hatay-et-acili",
+    "cat": "Hatay Usulü",
+    "name": "Hatay Usulü Et Acılı Zurna",
+    "name_en": "Spicy Hatay Beef Zurna",
+    "price": 350,
+    "gram": "90 gr",
+    "img": "et_acili",
+    "desc": "Acı sevenler için Hatay soslu et zurna.",
+    "desc_en": "Spicy beef zurna with signature Hatay sauce.",
+    "tags": [
+      "et",
+      "hatay",
+      "acı"
+    ]
+  },
+  {
+    "id": "hatay-et-kasarli",
+    "cat": "Hatay Usulü",
+    "name": "Hatay Usulü Et Kaşarlı Zurna",
+    "name_en": "Cheesy Hatay Beef Zurna",
+    "price": 400,
+    "gram": "90 gr",
+    "img": "kasarli_zurna",
+    "desc": "Kaşar, et döner, patates, turşu ve özel soslar.",
+    "desc_en": "Cheese, beef döner, fries, pickles and special sauces.",
+    "tags": [
+      "et",
+      "hatay",
+      "kaşar"
+    ]
+  },
+  {
+    "id": "alman-et-durum",
+    "cat": "Alman",
+    "name": "Alman Et Dürüm",
+    "name_en": "German Style Beef Wrap",
+    "price": 450,
+    "gram": "90 gr",
+    "img": "alman_et_durum",
+    "desc": "Et döner, Alman sosları, mor lahana, beyaz lahana ve yeşillik.",
+    "desc_en": "Beef döner, German-style sauces, red and white cabbage, and greens.",
+    "tags": [
+      "et",
+      "alman",
+      "dürüm"
+    ]
+  },
+  {
+    "id": "alman-et-gobit",
+    "cat": "Alman",
+    "name": "Alman Et Gobit",
+    "name_en": "German Style Beef Gobit",
+    "price": 450,
+    "gram": "90 gr",
+    "img": "et_gobit",
+    "desc": "Gobit ekmeğinde et döner ve Alman garnitürleri.",
+    "desc_en": "Beef döner and German-style garnishes in gobit bread.",
+    "tags": [
+      "et",
+      "alman",
+      "gobit"
+    ]
+  },
+  {
+    "id": "alman-et-box",
+    "cat": "Alman",
+    "name": "Alman Et Box",
+    "name_en": "German Style Beef Box",
+    "price": 550,
+    "gram": "",
+    "img": "alman_box",
+    "desc": "Patates, salata, et döner ve özel Alman sosu.",
+    "desc_en": "Fries, salad, beef döner and special German-style sauce.",
+    "tags": [
+      "et",
+      "alman",
+      "box"
+    ]
+  },
+  {
+    "id": "alman-et-special",
+    "cat": "Alman",
+    "name": "Alman Et Special Porsiyon",
+    "name_en": "German Style Beef Special",
+    "price": 600,
+    "gram": "",
+    "img": "pilav_et",
+    "desc": "Bol et döner, garnitür ve Alman sosları.",
+    "desc_en": "Generous beef döner, garnishes and German-style sauces.",
+    "tags": [
+      "et",
+      "alman",
+      "tabak"
+    ]
+  },
+  {
+    "id": "klasik-tavuk-durum",
+    "cat": "Tavuk Döner",
+    "name": "Klasik Tavuk Dürüm",
+    "name_en": "Classic Chicken Döner Wrap",
+    "price": 250,
+    "gram": "90 gr",
+    "img": "tavuk_durum",
+    "desc": "Tavuk döner, marul, domates, soğan ve salça sosu.",
+    "desc_en": "Chicken döner, lettuce, tomato, onion and tomato sauce.",
+    "tags": [
+      "tavuk",
+      "dürüm"
+    ]
+  },
+  {
+    "id": "hatay-tavuk-durum",
+    "cat": "Tavuk Döner",
+    "name": "Hatay Usulü Tavuk Dürüm",
+    "name_en": "Hatay Style Chicken Wrap",
+    "price": 250,
+    "gram": "",
+    "img": "tavuk_hatay_durum",
+    "desc": "Patates, turşu, sarımsaklı mayonez ve Hatay sosu.",
+    "desc_en": "Fries, pickles, garlic mayo and Hatay sauce.",
+    "tags": [
+      "tavuk",
+      "hatay",
+      "dürüm"
+    ]
+  },
+  {
+    "id": "hatay-tavuk-zurna",
+    "cat": "Tavuk Döner",
+    "name": "Hatay Usulü Tavuk Zurna",
+    "name_en": "Hatay Style Chicken Zurna",
+    "price": 300,
+    "gram": "",
+    "img": "tavuk_zurna",
+    "desc": "Uzun lavaşta Hatay usulü tavuk döner.",
+    "desc_en": "Hatay-style chicken döner in a long lavash.",
+    "tags": [
+      "tavuk",
+      "hatay",
+      "zurna"
+    ]
+  },
+  {
+    "id": "hatay-tavuk-acili",
+    "cat": "Tavuk Döner",
+    "name": "Hatay Usulü Tavuk Acılı",
+    "name_en": "Spicy Hatay Chicken Wrap",
+    "price": 300,
+    "gram": "",
+    "img": "tavuk_acili",
+    "desc": "Acı Hatay sosu, tavuk döner, patates ve turşu.",
+    "desc_en": "Spicy Hatay sauce, chicken döner, fries and pickles.",
+    "tags": [
+      "tavuk",
+      "hatay",
+      "acı"
+    ]
+  },
+  {
+    "id": "hatay-tavuk-kasarli",
+    "cat": "Tavuk Döner",
+    "name": "Hatay Usulü Tavuk Kaşarlı",
+    "name_en": "Cheesy Hatay Chicken Wrap",
+    "price": 350,
+    "gram": "",
+    "img": "tavuk_kasarli",
+    "desc": "Kaşar, tavuk döner, patates, turşu ve özel soslar.",
+    "desc_en": "Cheese, chicken döner, fries, pickles and special sauces.",
+    "tags": [
+      "tavuk",
+      "hatay",
+      "kaşar"
+    ]
+  },
+  {
+    "id": "alman-tavuk-durum",
+    "cat": "Alman",
+    "name": "Alman Tavuk Dürüm",
+    "name_en": "German Style Chicken Wrap",
+    "price": 400,
+    "gram": "",
+    "img": "tavuk_durum",
+    "desc": "Tavuk döner, Alman sosları, lahana ve yeşillik.",
+    "desc_en": "Chicken döner, German-style sauces, cabbage and greens.",
+    "tags": [
+      "tavuk",
+      "alman",
+      "dürüm"
+    ]
+  },
+  {
+    "id": "alman-tavuk-gobit",
+    "cat": "Alman",
+    "name": "Alman Tavuk Gobit",
+    "name_en": "German Style Chicken Gobit",
+    "price": 400,
+    "gram": "",
+    "img": "tavuk_gobit",
+    "desc": "Gobit ekmeğinde tavuk döner, Alman sosları ve salata.",
+    "desc_en": "Chicken döner, German-style sauces and salad in gobit bread.",
+    "tags": [
+      "tavuk",
+      "alman",
+      "gobit"
+    ]
+  },
+  {
+    "id": "alman-tavuk-box",
+    "cat": "Alman",
+    "name": "Alman Tavuk Box",
+    "name_en": "German Style Chicken Box",
+    "price": 400,
+    "gram": "",
+    "img": "alman_box",
+    "desc": "Patates, salata, tavuk döner ve özel Alman sosu.",
+    "desc_en": "Fries, salad, chicken döner and special German-style sauce.",
+    "tags": [
+      "tavuk",
+      "alman",
+      "box"
+    ]
+  },
+  {
+    "id": "alman-tavuk-special",
+    "cat": "Alman",
+    "name": "Alman Tavuk Special",
+    "name_en": "German Style Chicken Special",
+    "price": 500,
+    "gram": "",
+    "img": "alman_special",
+    "desc": "Tavuk döner, pilav, garnitür ve özel Alman sosları.",
+    "desc_en": "Chicken döner, rice, garnishes and special German-style sauces.",
+    "tags": [
+      "tavuk",
+      "alman",
+      "tabak"
+    ]
+  },
+  {
+    "id": "porsiyon-kofte",
+    "cat": "Diğer",
+    "name": "Porsiyon Köfte",
+    "name_en": "Meatball Plate",
+    "price": 500,
+    "gram": "",
+    "img": "kofte",
+    "desc": "5 adet köfte, pilav, marul, mor lahana ve soğan.",
+    "desc_en": "Five meatballs with rice, lettuce, red cabbage and onion.",
+    "tags": [
+      "köfte",
+      "tabak"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "provider": "static",
+  "placeId": "",
+  "fallback": [
+    {
+      "author": "Müşteri yorumu",
+      "rating": 5,
+      "text": "Çeşme’de yediğim en iyi Hatay usulü dürüm."
+    },
+    {
+      "author": "Müşteri yorumu",
+      "rating": 5,
+      "text": "Harbi zurna dürüm olmuş. Sarımsaklı mayonezi ve Hatay sosu harika."
+    },
+    {
+      "author": "Müşteri yorumu",
+      "rating": 5,
+      "text": "Döner çok güzeldi, içeriği bol. Ellerinize sağlık."
+    }
+  ]
+}
