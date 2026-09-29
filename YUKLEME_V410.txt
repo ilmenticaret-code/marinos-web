@@ -1,0 +1,9 @@
+MARINOS DÖNER V4.0.10 — ALEVLI HERO TAM PAKET
+
+Bu pakette ana sayfa için kullanılan alevli görsel fiziksel olarak dahildir:
+assets/images/hero-fire-v410.jpg
+
+index.html bu dosyayı doğrudan çağırır.
+Sunucuya ZIP içindeki TÜM dosya ve klasörleri yükleyin.
+Özellikle assets/images/hero-fire-v410.jpg dosyasının yüklenmiş olduğunu kontrol edin.
+Yüklemeden sonra tarayıcı önbelleğini temizleyin / Ctrl+F5 yapın.
