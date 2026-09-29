@@ -119,3 +119,10 @@ footer{border-top:1px solid #232323;padding:42px 0 105px;color:var(--muted)}.foo
   .mobilebar a{padding:12px 5px;font-size:12px}
   footer{padding-bottom:135px}
 }
+
+/* Mobile menu final polish 2026-09-30 */
+@media(max-width:600px){
+  .filters{padding-right:28px;mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 28px),transparent 100%);-webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 28px),transparent 100%)}
+  .mobilebar{transition:transform .22s ease,opacity .22s ease}
+  .mobilebar.is-hidden{transform:translateY(calc(100% + 28px));opacity:0;pointer-events:none}
+}
