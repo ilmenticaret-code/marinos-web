@@ -1,0 +1,11 @@
+MARINOS DÖNER V4.0.9
+
+ZIP dosyasını açın. İçindeki dosya ve klasörleri GitHub deposunun ana dizinine yükleyin; aynı adlı dosyaları değiştirin. ZIP dosyasını veya üst klasörü yüklemeyin.
+
+Önemli yeni dosyalar: styles-v409.css, app-v409.js, assets/images/hero-fire-v409.png. index.html ve menu/index.html dahil HTML dosyalarını da güncelleyin.
+
+Ana sayfa: yazısız, belirgin alevli döner görseli. Menü: 220 px masaüstü / 200 px mobil fotoğraf alanı, kırpılmadan sığdırma ve iç boşluk.
+
+Kontrol: Yayından sonra sayfa kaynağında styles-v409.css görünmelidir. Görünmüyorsa eski HTML yayındadır. GitHub Pages dağıtımının tamamlandığını kontrol edin, ardından Ctrl+F5 ile yenileyin.
+
+JavaScript sözdizimi ve dosya bağlantıları kontrol edildi. Bu ortamda tarayıcı başlatılamadığı için görsel tarayıcı testi tamamlanamadı.
