@@ -1,14 +1,13 @@
 {
-  "version": "4.0.0",
-  "analytics": "G-DEKTBYE7TM",
-  "search_console": "DNS verified",
-  "sitemap": "https://marinosdoner.com/sitemap.xml",
-  "pages": 9,
-  "products": 22,
-  "images_webp": 18,
-  "google_reviews": "API-ready; Place ID and protected endpoint remain to be supplied",
-  "notes": [
-    "Product images use the closest matching existing visual by product form.",
-    "No public API key is embedded."
-  ]
+  "version": "4.0.8",
+  "base": "Current public homepage, CSS, scripts and menu retrieved 2026-09-29",
+  "checks": {
+    "javascript_syntax": "passed",
+    "category_filter_and_links": "passed",
+    "local_asset_paths": "passed",
+    "product_records_unchanged": 22,
+    "browser_visual_verification": "not completed: preview environment unavailable"
+  },
+  "deployment": "not deployed",
+  "pending": "Antakya and kumru product details deferred by user."
 }

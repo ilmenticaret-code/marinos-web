@@ -1,12 +1,11 @@
-# Marinos Döner V4.0 Final
+# Marinos Döner — Görünüm düzeltmesi (4.0.8)
 
-Yayına hazır statik Cloudflare Pages projesi.
+## GitHub’a yükleme
+ZIP dosyasını açın. İçindeki index.html, CSS, JavaScript, assets ve diğer dosya/klasörleri mevcut marinos-web deposunun ana dizinine yükleyin; aynı adlı dosyaları değiştirin. ZIP dosyasını doğrudan yüklemeyin.
 
-## Entegrasyonlar
-- Google Analytics 4: `G-DEKTBYE7TM`
-- Search Console: DNS ile doğrulandı
-- Sitemap: `https://marinosdoner.com/sitemap.xml`
-- Google Reviews: Güvenli Cloudflare Worker endpoint'i eklenmeye hazırdır. API anahtarı bu projeye yazılmamalıdır.
+Yayımlama tamamlanınca ana sayfayı ve menüyü Ctrl+F5 ile yenileyin.
 
-## Yayınlama
-ZIP'i açın ve içindeki dosya/klasörlerin tamamını GitHub `marinos-web` deposunun ana dizinine yükleyin. Cloudflare otomatik yayınlar.
+## Kontroller
+JavaScript sözdizimi, kategori filtreleri, yerel görsel bağlantıları ve mevcut 22 ürünün korunması kontrol edildi. Bu ortamda son tarayıcı görüntüsü doğrulanamadı. Canlı siteye yükleme yapılmadı.
+
+Antakya ve kumru ürün bilgileri sonraki çalışmada eklenecek.

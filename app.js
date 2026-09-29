@@ -29,12 +29,31 @@
  if(grid){
    try{
     const data=await fetch('/data/menu.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('menu');return r.json()});
-    const filters=$('#filters'), search=$('#search'); let current=sessionStorage.getItem('marinos-preselect')||'Tümü'; sessionStorage.removeItem('marinos-preselect');
-    const cats=['Tümü',...new Set(data.map(x=>x.cat))];
+    const filters=$('#filters'), search=$('#search');
+    const categories={tumu:'Tümü',et:'Et Döner',tavuk:'Tavuk Döner',hatay:'Hatay Usulü',antakya:'Antakya Usulü',alman:'Alman',kumru:'Kumru',diger:'Diğer'};
+    const cats=[...new Set([...Object.values(categories),...data.map(x=>x.cat)])];
+    const params=new URLSearchParams(location.search);
+    let current=categories[params.get('kategori')]||sessionStorage.getItem('marinos-preselect')||'Tümü';
+    sessionStorage.removeItem('marinos-preselect');
+    if(!cats.includes(current)) current='Tümü';
+    const matchesCategory=(x,c)=> c==='Tümü'||x.cat===c||
+      (c==='Hatay Usulü'&&/hatay/i.test(x.id+' '+x.name))||
+      (c==='Et Döner'&&/\bet\b/i.test(x.name))||
+      (c==='Tavuk Döner'&&/tavuk/i.test(x.name))||
+      (c==='Antakya Usulü'&&/antakya/i.test(x.id+' '+x.name))||
+      (c==='Kumru'&&/kumru/i.test(x.id+' '+x.name));
+    const emptyMessage=q=>{
+      if(q) return lang==='en'?'No products found.':'Aramanıza uygun ürün bulunamadı.';
+      if(current==='Antakya Usulü'||current==='Kumru') {
+        const message=encodeURIComponent('Merhaba, '+current+' seçeneklerinizin güncel içerik ve fiyat bilgisini alabilir miyim?');
+        return `<h2>${current}</h2><p>${lang==='en'?'Contact us for current options, ingredients and prices.':'Güncel seçenekler, içerik ve fiyat bilgisi için bize ulaşın.'}</p><a class="pill" href="https://wa.me/${cfg.whatsapp}?text=${message}" target="_blank" rel="noopener">${lang==='en'?'Ask on WhatsApp':'WhatsApp’tan Bilgi Al'}</a>`;
+      }
+      return lang==='en'?'No products found.':'Ürün bulunamadı.';
+    };
     filters.innerHTML=cats.map(c=>`<button class="filter ${c===current?'active':''}" data-cat="${c}">${lang==='en'&&c==='Tümü'?'All':c}</button>`).join('');
-    const image=item=>`<picture><source srcset="/assets/images/${item.img}.webp?v=402" type="image/webp"><img src="/assets/images/${item.img}.jpg?v=402" alt="${tr(item,'name')}" loading="lazy" decoding="async" width="1400" height="1100"></picture>`;
-    const render=()=>{const q=(search?.value||'').toLocaleLowerCase('tr');const list=data.filter(x=>(current==='Tümü'||x.cat===current)&&(`${x.name} ${x.name_en} ${x.desc} ${x.tags.join(' ')}`).toLocaleLowerCase('tr').includes(q));grid.innerHTML=list.length?list.map(item=>`<article class="card" data-id="${item.id}">${image(item)}<div class="card-body"><div class="card-top"><h3>${tr(item,'name')}</h3><span class="price">${money(item.price)}</span></div><div class="gram">${item.gram||'&nbsp;'}</div><p class="desc">${tr(item,'desc')}</p><div class="card-actions"><a class="order" target="_blank" rel="noopener" data-product="${item.id}" href="https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent((lang==='en'?'Hello, I would like to order: ':'Merhaba, sipariş vermek istiyorum: ')+tr(item,'name'))}">${lang==='en'?'Order':'Sipariş Ver'}</a><button class="detail" data-detail="${item.id}">${lang==='en'?'Details':'İçeriği Gör'}</button></div></div></article>`).join(''):`<div class="empty">${lang==='en'?'No products found.':'Ürün bulunamadı.'}</div>`;};
-    filters.onclick=e=>{const b=e.target.closest('[data-cat]');if(!b)return;current=b.dataset.cat;$$('.filter',filters).forEach(x=>x.classList.toggle('active',x===b));event('menu_filter',{category:current});render()};if(search)search.oninput=render;render();event('menu_view',{items:data.length});
+    const image=item=>`<picture><source srcset="/assets/images/${item.img}.webp?v=402" type="image/webp"><img src="/assets/images/${item.img}.jpg?v=402" alt="${tr(item,'name')}" loading="lazy" decoding="async" width="1400" height="1050"></picture>`;
+    const render=()=>{const q=(search?.value||'').toLocaleLowerCase('tr');const list=data.filter(x=>matchesCategory(x,current)&&(`${x.name} ${x.name_en} ${x.desc} ${x.tags.join(' ')}`).toLocaleLowerCase('tr').includes(q));grid.innerHTML=list.length?list.map(item=>`<article class="card" data-id="${item.id}">${image(item)}<div class="card-body"><div class="card-top"><h3>${tr(item,'name')}</h3><span class="price">${money(item.price)}</span></div><div class="gram">${item.gram||'&nbsp;'}</div><p class="desc">${tr(item,'desc')}</p><div class="card-actions"><a class="order" target="_blank" rel="noopener" data-product="${item.id}" href="https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent((lang==='en'?'Hello, I would like to order: ':'Merhaba, sipariş vermek istiyorum: ')+tr(item,'name'))}">${lang==='en'?'Order':'Sipariş Ver'}</a><button class="detail" data-detail="${item.id}">${lang==='en'?'Details':'İçeriği Gör'}</button></div></div></article>`).join(''):`<div class="empty">${emptyMessage(q)}</div>`;};
+    filters.onclick=e=>{const b=e.target.closest('[data-cat]');if(!b)return;current=b.dataset.cat;const slug=Object.keys(categories).find(k=>categories[k]===current);const url=new URL(location.href);if(slug&&slug!=='tumu')url.searchParams.set('kategori',slug);else url.searchParams.delete('kategori');history.replaceState(null,'',url);$$('.filter',filters).forEach(x=>x.classList.toggle('active',x===b));event('menu_filter',{category:current});render()};if(search)search.oninput=render;render();event('menu_view',{items:data.length});
     const modal=$('#productModal');grid.onclick=e=>{const b=e.target.closest('[data-detail]');if(!b)return;const item=data.find(x=>x.id===b.dataset.detail);if(!item)return;$('#modalImage').src=`/assets/images/${item.img}.jpg`;$('#modalImage').alt=tr(item,'name');$('#modalName').textContent=tr(item,'name');$('#modalGram').textContent=item.gram||'';$('#modalDesc').textContent=tr(item,'desc');$('#modalPrice').textContent=money(item.price);$('#modalOrder').href=`https://wa.me/${cfg.whatsapp}?text=${encodeURIComponent((lang==='en'?'Hello, I would like to order: ':'Merhaba, sipariş vermek istiyorum: ')+tr(item,'name'))}`;modal.classList.add('open');document.body.classList.add('modal-open');event('view_item',{item_id:item.id,item_name:item.name,price:item.price,currency:'TRY'})};
     const close=()=>{modal.classList.remove('open');document.body.classList.remove('modal-open')};$$('[data-close]',modal).forEach(x=>x.onclick=close);modal.onclick=e=>{if(e.target===modal)close()};document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
    }catch(err){grid.innerHTML='<div class="empty">Menü geçici olarak yüklenemedi. Lütfen sayfayı yenileyin.</div>';console.error(err)}

@@ -1,0 +1,19 @@
+MARINOS DÖNER — 29 EYLÜL 2026 DÜZELTMELERİ
+
+• Canlı ana sayfa temel alındı.
+
+• Menü ön izlemeleri 4:3 alana sığdırıldı; sabit HTML yüksekliği taşması giderildi.
+
+• Ürünlerin içerik, gramaj, fiyat ve detay ekranı bilgileri korundu.
+
+• Alevli görsel pakete eklendi ve mobil/masaüstünde görünür bir alana yerleştirildi.
+
+• Kartların -128px üst boşluğu kaldırıldı. Butonlar ve kartlar ayrı satırlarda.
+
+• Hatay ve Alman bağlantıları ilgili kategoriyle açılır. Hatay filtresi et ve tavuk ürünlerini kapsar.
+
+• Mevcut menu.json içinde Antakya ve kumru ürün kaydı yok. Bu kategoriler ayrı açılır ve güncel içerik/fiyat için WhatsApp bağlantısı sunar. Fiyat/gramaj uydurulmadı.
+
+• Bu dosya paketi henüz canlı siteye yüklenmedi.
+
+YÜKLEME: ZIP içindeki dosya ve klasörleri mevcut sitenin kök dizinine yükleyin. Mevcut dosyaların üzerine yazın; eski tüm dizini silmeniz gerekmez.
