@@ -4,7 +4,7 @@ window.MARINOS_CONFIG={
   whatsapp:'905427120270',
   instagram:'https://instagram.com/marinosdoner',
   maps:'https://maps.app.goo.gl/bF68Jrswiaigx6oSA',
-  openingHours:'10:00–02:00',
+  openingHours:'10:00–22:00',
   analytics:{ga4MeasurementId:'G-DEKTBYE7TM'},
   reviews:{provider:'google',placeId:'',apiEndpoint:''},
   defaultLanguage:'tr',supportedLanguages:['tr','en']
